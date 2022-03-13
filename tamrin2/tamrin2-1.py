@@ -12,10 +12,11 @@ for item in range(n):
     person_list.append(person_dict)
 print(person_list)
 search=input("Enter name to search:")
+found=False # variable for detecting user
 for i in person_list:
     if i['name']==search:
         print(i["age"])
-        break
-    else:
-        print("There is no user with given name!")
-        break
+        found=True
+        
+if found=False: # if cannot find user with given name
+    print("There is no user with given name!")
